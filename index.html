@@ -1,243 +1,694 @@
-﻿<!DOCTYPE html>
+﻿pode mudar número dos botões do whatsapp desse html que atualmente é 5513999999999 para esse 5513991365403. segue o html: <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mini Mercado do Beto | Cardápio de Marmitas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Mercado do 
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+Beto | Cardápio de Marmitas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+  
+
+  body {
+      background: linear-gradient(180deg, #2b1409 0%, #4a2312 100%);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      
+
+padding: 20px;
+    }
+
+    .topo {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 
+
+24px;
+      text-align: center;
+      margin-bottom: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    }
+
+    .topo h1 {
+      font-size: 32px;
+      color: #ffd27a;
+    
+
+  margin-bottom: 8px;
+    }
+
+    .topo p {
+      font-size: 16px;
+      color: #f5e6d3;
+      line-height: 1.5;
+    }
+
+    .info-entrega {
+      margin-top: 15px;
+      font-
+
+size: 15px;
+      color: #fff;
+      background: rgba(255, 210, 122, 0.12);
+      padding: 12px;
+      border-radius: 12px;
+    }
+
+    .secao-titulo {
+      text-align: 
+
+center;
+      font-size: 28px;
+      color: #ffd27a;
+      margin: 25px 0 20px;
+    }
+
+    .menu-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    
+
 }
 
-body{
-background:linear-gradient(180deg,#2b1409 0%,#4a2312 100%);
-color:#fff;
-}
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      border: 1px 
 
-.container{
-max-width:900px;
-margin:0 auto;
-padding:20px;
-}
+solid rgba(255,255,255,0.08);
+    }
 
-.topo{
-background:rgba(255,255,255,0.06);
-border:1px solid rgba(255,255,255,0.08);
-border-radius:20px;
-padding:24px;
-text-align:center;
-margin-bottom:25px;
-box-shadow:0 8px 25px rgba(0,0,0,0.25);
-}
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
 
-.topo h1{
-font-size:32px;
-color:#ffd27a;
-margin-bottom:8px;
-}
+    .card-conteudo {
+      
 
-.topo p{
-font-size:16px;
-color:#f5e6d3;
-line-height:1.5;
-}
+padding: 18px;
+    }
 
-.info-entrega{
-margin-top:15px;
-font-size:15px;
-color:#fff;
-background:rgba(255,210,122,0.12);
-padding:12px;
-border-radius:12px;
-}
+    .card h2 {
+      font-size: 24px;
+      color: #ffd27a;
+      margin-bottom: 10px;
+    }
 
-.secao-titulo{
-text-align:center;
-font-size:28px;
-color:#ffd27a;
-margin:25px 0 20px;
-}
+    .descricao {
+      font-size: 15px;
+      color: #f5e6d3;
+  
 
-.menu-grid{
-display:flex;
-flex-direction:column;
-gap:20px;
-}
+    line-height: 1.5;
+      margin-bottom: 12px;
+    }
 
-.card{
-background:rgba(255,255,255,0.08);
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,0.25);
-border:1px solid rgba(255,255,255,0.08);
-}
+    .preco {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
 
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-display:block;
-}
+    
 
-.card-conteudo{
-padding:18px;
-}
+.botoes {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
-.card h2{
-font-size:24px;
-color:#ffd27a;
-margin-bottom:10px;
-}
+    .btn {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+     
 
-.descricao{
-font-size:15px;
-color:#f5e6d3;
-line-height:1.5;
-margin-bottom:12px;
-}
+ padding: 14px 16px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 15px;
+      transition: 0.2s ease;
+    }
 
-.preco{
-font-size:24px;
-font-weight:bold;
-color:#ffffff;
-margin-bottom:16px;
-}
+    .btn-delivery {
+      background: 
 
-.botoes{
-display:flex;
-flex-direction:column;
-gap:10px;
-}
+#25D366;
+      color: #fff;
+    }
 
-.btn{
-display:block;
-text-align:center;
-text-decoration:none;
-padding:14px 16px;
-border-radius:12px;
-font-weight:bold;
-font-size:15px;
-transition:0.2s ease;
-}
+    .btn-delivery:hover {
+      background: #1ebe5d;
+    }
 
-.btn-delivery{
-background:#25D366;
-color:#fff;
-}
+    .btn-retirada {
+      background: #ffd27a;
+      color: #3a1b0e;
+    }
 
-.btn-delivery:hover{
-background:#1ebe5d;
-}
+    
 
-.btn-retirada{
-background:#ffd27a;
-color:#3a1b0e;
-}
+.btn-retirada:hover {
+      background: #f4c15e;
+    }
 
-.btn-retirada:hover{
-background:#f4c15e;
-}
+    .rodape {
+      margin-top: 35px;
+      padding: 25px;
+      text-align: center;
+      background: rgba
 
-.rodape{
-margin-top:35px;
-padding:25px;
-text-align:center;
-background:rgba(255,255,255,0.06);
-border-radius:18px;
-border:1px solid rgba(255,255,255,0.08);
-}
+(255,255,255,0.06);
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
 
-.rodape h3{
-color:#ffd27a;
-font-size:24px;
-margin-bottom:10px;
-}
+    .rodape h3 {
+      color: #ffd27a;
+      font-size: 24px;
+      
 
-.rodape p{
-color:#f5e6d3;
-line-height:1.6;
-margin-bottom:8px;
-}
+margin-bottom: 10px;
+    }
 
-.telefone{
-font-size:20px;
-font-weight:bold;
-color:#fff;
-margin-top:10px;
-}
+    .rodape p {
+      color: #f5e6d3;
+      line-height: 1.6;
+      margin-bottom: 8px;
+    }
 
-@media(max-width:600px){
-.topo h1{font-size:26px;}
-.secao-titulo{font-size:24px;}
-.card img{height:200px;}
-}
-</style>
+    .rodape .telefone {
+      font-size: 20px;
+      
+
+font-weight: bold;
+      color: #fff;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .topo h1 {
+        font-size: 26px;
+      }
+
+      .secao-titulo {
+     
+
+   font-size: 24px;
+      }
+
+      .card img {
+        height: 200px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
 
-<div class="container">
+    <div class="topo">
+      <h1>Mini 
 
-<div class="topo">
-<h1>Mini Mercado do Beto</h1>
-<p>
-Marmitas fresquinhas, sabor caseiro e atendimento rápido!<br>
-Escolha sua marmita abaixo e peça pelo WhatsApp.
-</p>
+Mercado do Beto</h1>
+      <p>
+        Marmitas fresquinhas, sabor caseiro e atendimento rápido!<br>
+        Escolha sua marmita abaixo e peça pelo WhatsApp.
+      </p>
+    
 
-<div class="info-entrega">
-🚚 Delivery disponível | 🛍️ Retirada no local<br>
-Ao clicar, seu pedido será enviado direto para o WhatsApp.
+  <div class="info-entrega">
+        🚚 Delivery disponível | 🛍️ Retirada no local<br>
+        Ao clicar, seu pedido será enviado direto para o WhatsApp da Jo.
+      
+
 </div>
-</div>
+    </div>
 
-<h2 class="secao-titulo">Cardápio Completo</h2>
+    <h2 class="secao-titulo">Cardápio Completo</h2>
 
-<div class="menu-grid">
+    <div class="menu-grid">
 
-<!-- EXEMPLO DE CARD -->
-<div class="card">
-<img src="bifeacebolado1.jpg" alt="Bife Acebolado">
-<div class="card-conteudo">
-<h2>Bife Acebolado</h2>
-<p class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e fritas.</p>
+      <!-- 1 -->
+      <div class="card">
+        <img 
+
+src="bifeacebolado1.jpg" alt="Bife Acebolado">
+        <div class="card-conteudo">
+          <h2>Bife Acebolado</h2>
+          <p class="descricao">Marmita caseira 
+
+acompanhada de arroz, feijão, salada e fritas.</p>
+          <div class="preco">R$ 17,50</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" 
+
+target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20Acebolado%20-%20DELIVERY.">Pedir Delivery</a>
+            <a 
+
+class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20Acebolado%20-%20RETIRAR%20NO
+
+%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <img src="frangoacebolado2.jpg" alt="Filé de 
+
+Frango Acebolado">
+        <div class="card-conteudo">
+          <h2>Filé de Frango Acebolado</h2>
+          <p class="descricao">Marmita caseira acompanhada de arroz, 
+
+feijão, salada e fritas.</p>
+          <div class="preco">R$ 17,50</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" target="_blank" 
+
+href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Filé%20de%20Frango%20Acebolado%20-%20DELIVERY.">Pedir Delivery</a>
+            <a 
+
+class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Filé%20de%20Frango%20Acebolado%20-%20RETIRAR
+
+%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <img src="bistecaacebolada1.jpg" 
+
+alt="Bisteca Acebolada">
+        <div class="card-conteudo">
+          <h2>Bisteca Acebolada</h2>
+          <p class="descricao">Marmita caseira acompanhada de arroz, 
+
+feijão, salada e fritas.</p>
+          <div class="preco">R$ 17,50</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" target="_blank" 
+
+href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bisteca%20Acebolada%20-%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-
+
+retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bisteca%20Acebolada%20-%20RETIRAR%20NO%20LOCAL.">Retirar no 
+
+Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <img src="omelecomqueijo1.jpg" alt="Omelete com Queijo">
+        <div 
+
+class="card-conteudo">
+          <h2>Omelete com Queijo</h2>
+          <p class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e fritas.</p>
+          
+
 <div class="preco">R$ 17,50</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" target="_blank" href="https://wa.me/5513991365403?text=Olá!
+
+%20Quero%20pedir%20a%20marmita%20de%20Omelete%20com%20Queijo%20-%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-retirada" target="_blank" 
+
+href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Omelete%20com%20Queijo%20-%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          
+
+</div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="card">
+        <img src="figadoacebolado1.jpg" alt="Fígado Acebolado">
+        <div class="card-
+
+conteudo">
+          <h2>Fígado Acebolado</h2>
+          <p class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e fritas.</p>
+          <div 
+
+class="preco">R$ 17,50</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero
+
+%20pedir%20a%20marmita%20de%20Fígado%20Acebolado%20-%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-retirada" target="_blank" 
+
+href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Fígado%20Acebolado%20-%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+   
+
+     </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="card">
+        <img src="calabresa1.jpg" alt="Calabresa">
+        <div class="card-conteudo">
+          
+
+<h2>Calabresa</h2>
+          <p class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e fritas.</p>
+          <div class="preco">R$ 18,50</div>
+          
 
 <div class="botoes">
+            <a class="btn btn-delivery" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Calabresa
 
-<a class="btn btn-delivery"
-target="_blank"
-href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20Acebolado%20-%20DELIVERY.">
-Pedir Delivery
-</a>
+%20-%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita
 
-<a class="btn btn-retirada"
-target="_blank"
-href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20Acebolado%20-%20RETIRAR%20NO%20LOCAL.">
-Retirar no Local
-</a>
+%20de%20Calabresa%20-%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
 
-</div>
-</div>
-</div>
+      <!-- 7 -->
+      <div class="card">
+        <img 
 
-<!-- OBSERVAÇÃO -->
-<!-- Todos os outros botões também já usam o número 5513991365403 -->
+src="bifegrelhado1.jpg" alt="Bife Grelhado">
+        <div class="card-conteudo">
+          <h2>Bife Grelhado</h2>
+          <p class="descricao">Marmita caseira 
 
-</div>
+acompanhada de arroz, feijão, salada e fritas.</p>
+          <div class="preco">R$ 21,00</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" 
 
-<div class="rodape">
-<h3>Faça seu pedido agora</h3>
+target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20Grelhado%20-%20DELIVERY.">Pedir Delivery</a>
+            <a 
+
+class="btn btn-retirada" target="_blank" href="https://wa.me/55139913654039?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20Grelhado%20-%20RETIRAR%20NO
+
+%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="card">
+        <img src="bifecomovo1.jpg" alt="Bife com 
+
+Ovo">
+        <div class="card-conteudo">
+          <h2>Bife com Ovo</h2>
+          <p class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e 
+
+fritas.</p>
+          <div class="preco">R$ 21,00</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" target="_blank" 
+
+href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20com%20Ovo%20-%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-
+
+retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20com%20Ovo%20-%20RETIRAR%20NO%20LOCAL.">Retirar no 
+
+Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="card">
+        <img src="bifeamililanesa1.jpg" alt="Bife à Milanesa">
+        <div 
+
+class="card-conteudo">
+          <h2>Bife à Milanesa</h2>
+          <p class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e fritas.</p>
+          <div 
+
+class="preco">R$ 21,00</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero
+
+%20pedir%20a%20marmita%20de%20Bife%20à%20Milanesa%20-%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-retirada" target="_blank" 
+
+href="https://wa.me/5513999999999?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20à%20Milanesa%20-%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+  
+
+      </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="card">
+        <img src="frangogrelhado1.jpg" alt="Frango Grelhado">
+        <div class="card-conteudo">
+       
+
+   <h2>Frango Grelhado</h2>
+          <p class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e fritas.</p>
+          <div class="preco">R$ 
+
+21,00</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a
+
+%20marmita%20de%20Frango%20Grelhado%20-%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?
+
+text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Frango%20Grelhado%20-%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 
+
+11 -->
+      <div class="card">
+        <img src="bifeamililanesa1.jpg" alt="Frango à Milanesa">
+        <div class="card-conteudo">
+          <h2>Frango à Milanesa</h2>
+   
+
+       <p class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e fritas.</p>
+          <div class="preco">R$ 21,00</div>
+          <div 
+
+class="botoes">
+            <a class="btn btn-delivery" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Frango%20à
+
+%20Milanesa%20-%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a
+
+%20marmita%20de%20Frango%20à%20Milanesa%20-%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div 
+
+class="card">
+        <img src="bifeaparmegiana1.jpg" alt="Bife à Parmegiana">
+        <div class="card-conteudo">
+          <h2>Bife à Parmegiana</h2>
+          <p 
+
+class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e fritas.</p>
+          <div class="preco">R$ 24,00</div>
+          <div class="botoes">
+           
+
+ <a class="btn btn-delivery" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bife%20à%20Parmegiana%20-
+
+%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-retirada" target="_blank" href="https://wa.me/55139913654039?text=Olá!%20Quero%20pedir%20a%20marmita%20de
+
+%20Bife%20à%20Parmegiana%20-%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="card">
+        
+
+<img src="bifeaparmegiana1.jpg" alt="Frango à Parmegiana">
+        <div class="card-conteudo">
+          <h2>Frango à Parmegiana</h2>
+          <p 
+
+class="descricao">Marmita caseira acompanhada de arroz, feijão, salada e fritas.</p>
+          <div class="preco">R$ 24,00</div>
+          <div class="botoes">
+           
+
+ <a class="btn btn-delivery" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Frango%20à%20Parmegiana%20-
+
+%20DELIVERY.">Pedir Delivery</a>
+            <a class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de
+
+%20Frango%20à%20Parmegiana%20-%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="card">
+        
+
+<img src="carnedepanela1.jpg" alt="Carne de Panela">
+        <div class="card-conteudo">
+          <h2>Carne de Panela</h2>
+          <p class="descricao">Marmita caseira 
+
+acompanhada de arroz, feijão, salada e fritas.</p>
+          <div class="preco">R$ 24,00</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" 
+
+target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Carne%20de%20Panela%20-%20DELIVERY.">Pedir Delivery</a>
+            <a 
+
+class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Carne%20de%20Panela%20-%20RETIRAR%20NO
+
+%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="card">
+        <img src="panquecadefrango1.jpg" 
+
+alt="Panqueca de Frango ao Molho">
+        <div class="card-conteudo">
+          <h2>Panqueca de Frango ao Molho</h2>
+          <p class="descricao">Marmita caseira 
+
+acompanhada de arroz, feijão, salada e fritas.</p>
+          <div class="preco">R$ 20,00</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" 
+
+target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Panqueca%20de%20Frango%20ao%20Molho%20-%20DELIVERY.">Pedir 
+
+Delivery</a>
+            <a class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Panqueca%20de
+
+%20Frango%20ao%20Molho%20-%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 16 -->
+      <div class="card">
+        <img 
+
+src="virado1.jpg" alt="Virada Paulista">
+        <div class="card-conteudo">
+          <h2>Virada Paulista</h2>
+          <p class="descricao">Prato especial da casa. 
+
+Consulte detalhes e acompanhamentos pelo WhatsApp.</p>
+          <div class="preco">R$ 28,00</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" 
+
+target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Virada%20Paulista%20-%20DELIVERY.">Pedir Delivery</a>
+            <a 
+
+class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Virada%20Paulista%20-%20RETIRAR%20NO
+
+%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 17 -->
+      <div class="card">
+        <img src="filedefrango1.jpg" alt="Filé de 
+
+Frango Assado">
+        <div class="card-conteudo">
+          <h2>Filé de Frango Assado</h2>
+          <p class="descricao">Prato especial da casa. Consulte detalhes e 
+
+acompanhamentos pelo WhatsApp.</p>
+          <div class="preco">R$ 25,00</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" target="_blank" 
+
+href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Filé%20de%20Frango%20Assado%20-%20DELIVERY.">Pedir Delivery</a>
+            <a 
+
+class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Filé%20de%20Frango%20Assado%20-%20RETIRAR
+
+%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 18 -->
+      <div class="card">
+        <img src="bistecaacebolada1.jpg" 
+
+alt="Bisteca Acebolada Especial">
+        <div class="card-conteudo">
+          <h2>Bisteca Acebolada Especial</h2>
+          <p class="descricao">Prato adicional listado 
+
+no cardápio. Consulte confirmação pelo WhatsApp.</p>
+          <div class="preco">R$ 15,50</div>
+          <div class="botoes">
+            <a class="btn btn-delivery" 
+
+target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bisteca%20Acebolada%20Especial%20-%20DELIVERY.">Pedir Delivery</a>
+     
+
+       <a class="btn btn-retirada" target="_blank" href="https://wa.me/5513991365403?text=Olá!%20Quero%20pedir%20a%20marmita%20de%20Bisteca%20Acebolada%20Especial%20-
+
+%20RETIRAR%20NO%20LOCAL.">Retirar no Local</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="rodape">
+      <h3>Faça seu pedido agora</h3>
+      
+
 <p>📍 Retirada no local ou entrega via delivery</p>
-<p>📲 Atendimento rápido pelo WhatsApp</p>
-<p>⏰ Consulte horários e disponibilidade</p>
-<div class="telefone">(13) 99136-5403</div>
-</div>
+      <p>📲 Atendimento rápido pelo WhatsApp</p>
+      <p>⏰ Consulte horários e disponibilidade</p>
+      <div 
 
-</div>
+class="telefone">(13) 99136.5403</div>
+    </div>
+
+  </div>
 </body>
 </html>
